@@ -2,3 +2,20 @@
 
 /* Five-flavor extension: original palette and typography retained. */
 .taste-more{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px;border-top:1px solid #b07571;padding-top:35px;margin-top:35px}.taste-more>div{padding:10px 8%}.taste-more h3{font-size:28px}.taste-link{display:inline-block;font-size:14px;text-underline-offset:6px;margin-top:6px}.taste-note{font-size:12px;margin:35px 0 0;color:#f0d7bd}@media(max-width:650px){.taste-more{grid-template-columns:1fr;padding-top:8px}.taste-more>div{padding:26px 6%}.taste-more>div+div{border-left:0;border-top:1px solid #b07571}.taste-more h3{font-size:26px}.taste-more p br{display:none}.taste-more p{max-width:300px}.taste-note{text-align:left;font-size:12px}}
+
+/* 2026-10-05 修正：PC幅800px・背景色／数字色／見出しゴシック化／ジャンプボタン */
+body{background:#e3cfb4}
+header,main,footer{max-width:800px;margin-left:auto;margin-right:auto;background:var(--cream)}
+main{box-shadow:0 0 40px #4a252414}
+@media(min-width:651px){h1{font-size:clamp(44px,6.1vw,48.8px)}h2{font-size:clamp(28px,3.6vw,28.8px)}.product h3{font-size:25px}}
+.choices b,.number{color:#cc3333}
+h1,h2,h3,.about-facts b{font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;font-weight:700}
+header>a:last-child{border:1px solid var(--red);border-radius:30px;padding:6px 18px;color:var(--red);font-weight:600;transition:background .2s,color .2s}
+header>a:last-child:after{content:' ↓'}
+header>a:last-child:hover{background:var(--red);color:#fff}
+.choices{gap:12px;border:0}
+.choices a{display:flex;flex-direction:column;align-items:center;background:#fff;border:1px solid #cc3333;border-radius:10px;box-shadow:0 4px 0 #d8bfa0;font-weight:600;transition:transform .15s,box-shadow .15s}
+.choices a+a{border-left:1px solid #cc3333}
+.choices a:after{content:'';width:8px;height:8px;margin-top:8px;border-right:2px solid #cc3333;border-bottom:2px solid #cc3333;transform:rotate(45deg)}
+.choices a:hover{transform:translateY(2px);box-shadow:0 2px 0 #d8bfa0}
+@media(max-width:650px){header>a:last-child{font-size:12px;padding:5px 12px}.choices{gap:8px}.choices a{padding:12px 3px 14px}}
